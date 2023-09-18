@@ -1,0 +1,12 @@
+
+@model IList<agilt_projekt.web.Models.Event>
+
+<h1>Create our Event</h1>
+    <section>
+        @foreach (var item in Model)
+        {
+            <div><h3>@item.Name</h3><h4>@item.Description</h4><br></div>
+        }
+    </section>
+    <hr>
+    @Html.ActionLink("Log Out", "Index", "Home") 

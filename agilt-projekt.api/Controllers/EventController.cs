@@ -1,4 +1,5 @@
 using EventApi.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,6 +20,7 @@ public class EventController : ControllerBase
 
     // Retunera lista av events samt vilka som är anmälda
     [HttpGet()]
+    [Authorize(Roles = "User")]
     public async Task<IActionResult> GetAllEvents()
     {
 
@@ -26,6 +28,7 @@ public class EventController : ControllerBase
        .Select(e => new {
         Id = e.EventId,
         Event = e.EventName,
+
         Anmälda = e.Attendents.Select(a => new {
 
             Namn = $"{a.FirstName} {a.LastName}",

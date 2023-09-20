@@ -140,3 +140,16 @@ C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\obj\De
 C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\obj\Debug\net7.0\agilt-projekt.api.pdb
 C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\obj\Debug\net7.0\agilt-projekt.api.genruntimeconfig.cache
 C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\obj\Debug\net7.0\ref\agilt-projekt.api.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\newTi\Desktop\EventV2\Agilt-Utvecklingsprojekt\agilt-projekt.api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

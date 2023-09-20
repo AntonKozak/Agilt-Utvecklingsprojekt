@@ -1,0 +1,44 @@
+[
+    {
+        "EventId": 1,
+        "EventName": "Autumn highlights",
+        "Description": "15–16 September, Stora torg Taste, smell, feel, listen and enjoy flavors from Halmstad and the surrounding area during a two-day food festival in the heart of the city! Food is so much more than a need, it is also a craft and for many a great passion. For some, the charm lies in cooking the food and for others in eating it.",
+        "StartDate": "2023-09-20",
+        "EndDate": "2023-09-22"
+    },
+    {
+        "EventId": 2,
+        "EventName": "Hamndagarna (The harbor days)",
+        "Description": "16 September 2023, Hallands Hamnar Halmstad AB – NissankajenIt is now ten years since HallandsHamnar was formed. And we would like to celebrate that grandly with you.. There will be guided tours, exhibition of our large machines, coffee, ice cream and lots of other fun activities for the whole family. Celebrations also take place in Varberg on September 23.",
+        "StartDate": "2023-09-20",
+        "EndDate": "2023-09-22"
+    },
+    {
+        "EventId": 3,
+        "EventName": "Classical music",
+        "Description": "All autumn, Kulturhuset Najaden Take part in Kulturhuset Najaden's program with several classical concerts during the autumn. Listen to the Helsingborg Symphony Orchestra, Mezzo-soprano Åsa Olsson and Christer Nerfont and others",
+        "StartDate": "2023-09-20",
+        "EndDate": "2023-09-22"
+    },
+    {
+        "EventId": 4,
+        "EventName": "HBK matches",
+        "Description": "Allsvenskan season, home matches at Örjans vall HBK is back in the Allsvenskan again and the whole autumn is filled with exciting matches on the scenic Örjans vall. During the autumn, HBK hosts IF Elfsborg and Kalmar FF in Halmstad at home.",
+        "StartDate": "2023-09-20",
+        "EndDate": "2023-09-22"
+    },
+    {
+        "EventId": 5,
+        "EventName": "Halmstad's Lunch Theatre",
+        "Description": "20 September, 25 October, 22 November and 14 December 2023, Halmstad TheaterLunch Theater is simply a lunch that you combine with entertainment. Halmstads Teater presents a good lunch of Swedish and locally produced ingredients in the Festsalen at Halmstads Teater. When you have eaten and talked for a while with your table companions, the show begins. It's good and very nice! Feel warmly welcome to a lunch experience out of the ordinary.",
+        "StartDate": "2023-09-20",
+        "EndDate": "2023-09-22"
+    },
+    {
+        "EventId": 6,
+        "EventName": "Volley-ball",
+        "Description": "All autumn 2023, Halmstad Arena Follow Hylte/Halmstad VBK, which has both men's and women's teams at elite level. Matches at home, in Halmstad Arena, among others: October: 1, 7, 14 and 28. November: 14, 15, 19.",
+        "StartDate": "2023-09-20",
+        "EndDate": "2023-09-22"
+    }
+]

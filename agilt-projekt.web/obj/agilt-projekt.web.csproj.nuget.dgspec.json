@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anton\\Study\\AgileProject\\agilt-projekt.web\\agilt-projekt.web.csproj": {}
+    "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anton\\Study\\AgileProject\\agilt-projekt.web\\agilt-projekt.web.csproj": {
+    "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anton\\Study\\AgileProject\\agilt-projekt.web\\agilt-projekt.web.csproj",
+        "projectUniqueName": "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj",
         "projectName": "agilt-projekt.web",
-        "projectPath": "C:\\Users\\Anton\\Study\\AgileProject\\agilt-projekt.web\\agilt-projekt.web.csproj",
-        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anton\\Study\\AgileProject\\agilt-projekt.web\\obj\\",
+        "projectPath": "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj",
+        "packagesPath": "C:\\Users\\newTi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\newTi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

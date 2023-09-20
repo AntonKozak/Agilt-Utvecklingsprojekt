@@ -31,15 +31,3 @@ Kör dessa kommandon i terminalen:
 
 ## Nu kommer Foreign-key, Relationships mapper.
 
-## AUTH
-
-`Microsoft.AspNetCore.Authentication.JwtBearer`
-
-`Microsoft.AspNetCore.Identity.EntityFrameWorkCore`
-
-```
-// Lägger till identity med roller!
-builder.Services.AddIdentityCore<UserModel>()
-.AddRoles<IdentityRole>()
-.AddEntityFrameworkStores<EventApiContext>();
-```

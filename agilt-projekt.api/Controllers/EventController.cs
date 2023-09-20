@@ -22,9 +22,19 @@ public class EventController : ControllerBase
     public async Task<IActionResult> GetAllEvents()
     {
 
-        var result = await _context.Events.ToListAsync();
+       var result = await _context.Events
+       .Select(e => new {
+        Id = e.EventId,
+        Name = e.EventName,
+        Applied = e.Attendents.Select(a => new {
+            id = a.AttendentId,
+            Namn = a.FirstName + a.LastName,
 
-        return Ok(result);
+        }).ToList(),
+
+       }).ToListAsync();
+
+       return Ok(result);
 
     }
 

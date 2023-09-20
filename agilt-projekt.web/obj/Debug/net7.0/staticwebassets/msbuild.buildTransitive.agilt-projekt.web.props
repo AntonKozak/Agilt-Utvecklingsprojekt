@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\agilt-projekt.web.props" />
-</Project>

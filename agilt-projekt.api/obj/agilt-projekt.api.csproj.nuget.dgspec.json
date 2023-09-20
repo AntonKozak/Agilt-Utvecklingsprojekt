@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {}
+    "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {
+    "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
+        "projectUniqueName": "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
         "projectName": "agilt-projekt.api",
-        "projectPath": "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
+        "projectPath": "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
         "packagesPath": "C:\\Users\\newTi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\newTi\\Desktop\\EventProject\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\obj\\",
+        "outputPath": "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\newTi\\AppData\\Roaming\\NuGet\\NuGet.Config",

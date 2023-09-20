@@ -30,9 +30,6 @@ namespace agilt_projekt.api.Data.Migrations
                     b.Property<int>("EventId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("EventModelEventId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -46,7 +43,7 @@ namespace agilt_projekt.api.Data.Migrations
 
                     b.HasKey("AttendentId");
 
-                    b.HasIndex("EventModelEventId");
+                    b.HasIndex("EventId");
 
                     b.ToTable("Attendents");
                 });
@@ -80,7 +77,9 @@ namespace agilt_projekt.api.Data.Migrations
                 {
                     b.HasOne("EventApi.Models.EventModel", null)
                         .WithMany("Attendents")
-                        .HasForeignKey("EventModelEventId");
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EventApi.Models.EventModel", b =>

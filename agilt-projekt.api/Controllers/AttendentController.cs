@@ -1,11 +1,11 @@
 namespace EventApi.Controllers;
 
-using agilt_projekt.api.Data.Migrations;
+
 using EventApi.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
+[Route("api/v1/Attedent")]
 public class AttedentController : ControllerBase
 {
 
@@ -20,38 +20,43 @@ public class AttedentController : ControllerBase
 
     [HttpGet()]
 
-    public async Task<IActionResult> GetAllAttendents(){
-            var result = await _context.Attendents.ToListAsync();
+    public async Task<IActionResult> GetAllAttendents()
+    {
+        var result = await _context.Attendents.ToListAsync();
 
-            return Ok(result);
+        return Ok(result);
     }
 
 
     [HttpPost("{EventId}/{AttendentId}")]
+    public async Task<IActionResult> AddAttendentToEvent(int EventId, int AttendentId)
+    {
+        var currentEvent = await _context.Events
+                                .Include(e => e.Attendents)
+                                .FirstOrDefaultAsync(e => e.EventId == EventId);
 
-    public async Task<IActionResult> AddAttendentToEvent(int EventId, int AttendentId){
+        if (currentEvent == null)
+            return NotFound($"Event with ID: {EventId} does not exist.");
 
-        var CurrentEvent = await _context.Events.FindAsync(EventId);
+        var attendant = await _context.Attendents.FindAsync(AttendentId);
 
-        if(CurrentEvent is null) return NotFound($"Eventet med id: {EventId} finns ej");
-        
-        var attendent = await _context.Attendents.FindAsync(AttendentId);
-        if(attendent is null) return NotFound($"Den personen finns inte, registrera dig först!");
+        if (attendant == null)
+            return NotFound($"The person does not exist, please register first.");
 
+        currentEvent.Attendents.Add(attendant);
 
-        var AttendentToAdd = await _context.Events
-        .Include(e => e.Attendents)
-        .FirstOrDefaultAsync(e => e.EventId == EventId);
-
-        CurrentEvent.Attendents.Add(AttendentToAdd);
-
-        
-
-
-
-
-        return StatusCode(500);
+        try
+        {
+            await _context.SaveChangesAsync();
+            return Ok(); // Or return some meaningful message or object.
+        }
+        catch (Exception)
+        {
+            // Log the exception here
+            return StatusCode(500, "Internal server error. Please try again later.");
+        }
     }
+
 
 
 

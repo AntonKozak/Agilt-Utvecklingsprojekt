@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\agilt-projekt.web.props" />
-</Project>

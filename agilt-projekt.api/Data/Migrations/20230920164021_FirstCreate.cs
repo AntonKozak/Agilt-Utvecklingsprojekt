@@ -34,7 +34,6 @@ namespace agilt_projekt.api.Data.Migrations
                     AttendentId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     EventId = table.Column<int>(type: "INTEGER", nullable: false),
-                    EventModelEventId = table.Column<int>(type: "INTEGER", nullable: true),
                     FirstName = table.Column<string>(type: "TEXT", nullable: false),
                     LastName = table.Column<string>(type: "TEXT", nullable: false),
                     PhoneNumber = table.Column<int>(type: "INTEGER", nullable: false),
@@ -44,16 +43,17 @@ namespace agilt_projekt.api.Data.Migrations
                 {
                     table.PrimaryKey("PK_Attendents", x => x.AttendentId);
                     table.ForeignKey(
-                        name: "FK_Attendents_Events_EventModelEventId",
-                        column: x => x.EventModelEventId,
+                        name: "FK_Attendents_Events_EventId",
+                        column: x => x.EventId,
                         principalTable: "Events",
-                        principalColumn: "EventId");
+                        principalColumn: "EventId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Attendents_EventModelEventId",
+                name: "IX_Attendents_EventId",
                 table: "Attendents",
-                column: "EventModelEventId");
+                column: "EventId");
         }
 
         /// <inheritdoc />

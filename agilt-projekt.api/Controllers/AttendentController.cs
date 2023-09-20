@@ -48,11 +48,11 @@ public class AttedentController : ControllerBase
         try
         {
             await _context.SaveChangesAsync();
-            return Ok(); // Or return some meaningful message or object.
+            return Ok();
         }
         catch (Exception)
         {
-            // Log the exception here
+
             return StatusCode(500, "Internal server error. Please try again later.");
         }
     }

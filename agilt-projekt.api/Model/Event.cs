@@ -13,7 +13,7 @@ public class EventModel {
 
     public string Description {get;set;} = string.Empty;
 
-     [DataType(DataType.Date)]
+    [DataType(DataType.Date)]
     public DateTime StartDate {get;set;}
 
     [DataType(DataType.Date)]

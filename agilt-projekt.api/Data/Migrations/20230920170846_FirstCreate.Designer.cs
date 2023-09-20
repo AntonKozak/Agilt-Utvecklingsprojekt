@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace agilt_projekt.api.Data.Migrations
 {
     [DbContext(typeof(EventApiContext))]
-    [Migration("20230920164021_FirstCreate")]
+    [Migration("20230920170846_FirstCreate")]
     partial class FirstCreate
     {
         /// <inheritdoc />

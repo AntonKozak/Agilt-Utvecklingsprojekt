@@ -27,8 +27,9 @@ public class EventController : ControllerBase
         Id = e.EventId,
         Name = e.EventName,
         Applied = e.Attendents.Select(a => new {
-            id = a.AttendentId,
-            Namn = a.FirstName + a.LastName,
+
+            Namn = $"a.FirstName a.LastName",
+
 
         }).ToList(),
 

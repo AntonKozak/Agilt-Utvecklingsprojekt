@@ -7,7 +7,7 @@ namespace agilt_projekt.web.Controllers;
     {
         public IActionResult Index()
         {
-            
+
             return View();
         }
     }

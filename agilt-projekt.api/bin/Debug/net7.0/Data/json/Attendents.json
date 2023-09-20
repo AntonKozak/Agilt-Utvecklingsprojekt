@@ -1,0 +1,40 @@
+[
+
+    {
+        "AttendentId": 1,
+        "FirstName": "Maria",
+        "LastName": "Hedkvist",
+        "PhoneNumber": 170003333,
+        "EventId": 1,
+        "Address": "....gatan 47"
+    },
+
+    {
+        "AttendentId": 2,
+        "FirstName": "Oskar",
+        "LastName": "Markbäck Zeilon",
+        "PhoneNumber": 490003333,
+        "EventId": 3,
+        "Address": "....gatan 12"
+    },
+
+
+    {
+        "AttendentId": 3,
+        "FirstName": "Fredrik",
+        "LastName": "Nordberg",
+        "PhoneNumber": 860003333,
+        "EventId": 5,
+        "Address": "....gatan 50"
+    },
+
+
+    {
+        "AttendentId": 4,
+        "FirstName": "Anton",
+        "LastName": "Kozak",
+        "PhoneNumber": 190003333,
+        "EventId": 5,
+        "Address": "....gatan 24"
+    }
+]

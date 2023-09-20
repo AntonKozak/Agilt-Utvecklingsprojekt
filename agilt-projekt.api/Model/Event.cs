@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace EventApi.Models;
@@ -13,11 +14,14 @@ public class EventModel {
 
     public string Description {get;set;} = string.Empty;
 
+    [DataType(DataType.Date)]
     public DateTime StartDate {get;set;}
 
+    [DataType(DataType.Date)]
     public DateTime EndDate {get;set;}
 
 
-
-    public List<AttendentModel> Attendents {get;set;} = new List<AttendentModel>();
+    // Ett event kan ha många attendents
+    public ICollection<AttendentModel> Attendents {get;set;}
 }
+

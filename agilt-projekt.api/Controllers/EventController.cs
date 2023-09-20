@@ -1,4 +1,5 @@
 using EventApi.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,37 +18,30 @@ public class EventController : ControllerBase
 
     }
 
-    // Retunera lista av events
+    // Retunera lista av events samt vilka som är anmälda
     [HttpGet()]
+    [Authorize(Roles = "User")]
     public async Task<IActionResult> GetAllEvents()
     {
 
-        var result = await _context.Events.ToListAsync();
+       var result = await _context.Events
+       .Select(e => new {
+        Id = e.EventId,
+        Event = e.EventName,
 
-        return Ok(result);
+        Anmälda = e.Attendents.Select(a => new {
+
+            Namn = $"{a.FirstName} {a.LastName}",
+            Telefon = a.PhoneNumber
+
+
+        }).ToList(),
+
+       }).ToListAsync();
+
+       return Ok(result);
 
     }
-
-    // Test
-
-    [HttpGet("getby")]
-    public async Task<IActionResult> GetAllAttendents(){
-
-        var persons = await _context.Attendents.ToListAsync();
-
-        return Ok(persons);
-    }
-
-
-    // Http Post Add member
-
- /*    [HttpPost("{AttendentId}/addto/{EventId}")]
-    public async Task<IActionResult> ApplyAttendendToEvent(int AttendentId, int EventId)
-    {
-        var event = await _context.Event.FindAsync(EventId);
-
-        return NoContent();
-    } */
 
     // Hämta event på id
     [HttpGet("{eventId}")]

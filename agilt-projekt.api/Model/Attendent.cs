@@ -13,6 +13,9 @@ public class AttendentModel : Person {
     public int AttendentId {get;set;}
 
 
+    // En medlem kan vara anmäld till många event
+    public ICollection<EventModel> EventList {get;set;}
+
     // Främmande nyckel
     [ForeignKey("EventId")]
     public int EventId {get;set;}

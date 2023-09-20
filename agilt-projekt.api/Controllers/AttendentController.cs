@@ -1,11 +1,11 @@
 namespace EventApi.Controllers;
 
-using agilt_projekt.api.Data.Migrations;
+
 using EventApi.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
+[Route("api/v1/Attedent")]
 public class AttedentController : ControllerBase
 {
 
@@ -20,38 +20,53 @@ public class AttedentController : ControllerBase
 
     [HttpGet()]
 
-    public async Task<IActionResult> GetAllAttendents(){
-            var result = await _context.Attendents.ToListAsync();
+    public async Task<IActionResult> GetAllAttendents()
+    {
+        var result = await _context.Attendents
+        .Select(a => new {
+            Id = a.AttendentId,
+            Namn = $"{a.FirstName} {a.LastName}",
+            Telefon = a.PhoneNumber,
+            Anmäld = a.EventList.Select(e => new {
+            Eventnamn = e.EventName,
+            Datum = $"{e.StartDate.ToString("yyyy/MM/dd")} - {e.EndDate.ToString("yyyy/MM/dd")}"
+            }).ToList(),
+            Hemadress = a.Address,
+        }).ToListAsync();
 
-            return Ok(result);
+        return Ok(result);
     }
 
 
     [HttpPost("{EventId}/{AttendentId}")]
+    public async Task<IActionResult> AddAttendentToEvent(int EventId, int AttendentId)
+    {
+        var currentEvent = await _context.Events
+                                .Include(e => e.Attendents)
+                                .FirstOrDefaultAsync(e => e.EventId == EventId);
 
-    public async Task<IActionResult> AddAttendentToEvent(int EventId, int AttendentId){
+        if (currentEvent == null)
+            return NotFound($"Event with ID: {EventId} does not exist.");
 
-        var CurrentEvent = await _context.Events.FindAsync(EventId);
+        var attendant = await _context.Attendents.FindAsync(AttendentId);
 
-        if(CurrentEvent is null) return NotFound($"Eventet med id: {EventId} finns ej");
-        
-        var attendent = await _context.Attendents.FindAsync(AttendentId);
-        if(attendent is null) return NotFound($"Den personen finns inte, registrera dig först!");
+        if (attendant == null)
+            return NotFound($"The person does not exist, please register first.");
 
+        currentEvent.Attendents.Add(attendant);
 
-        var AttendentToAdd = await _context.Events
-        .Include(e => e.Attendents)
-        .FirstOrDefaultAsync(e => e.EventId == EventId);
+        try
+        {
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+        catch (Exception)
+        {
 
-        CurrentEvent.Attendents.Add(AttendentToAdd);
-
-        
-
-
-
-
-        return StatusCode(500);
+            return StatusCode(500, "Internal server error. Please try again later.");
+        }
     }
+
 
 
 

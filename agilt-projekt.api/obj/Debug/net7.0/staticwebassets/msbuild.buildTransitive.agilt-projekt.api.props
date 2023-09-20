@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\agilt-projekt.api.props" />
+</Project>

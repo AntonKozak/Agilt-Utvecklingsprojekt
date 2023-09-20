@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace EventApi.Models;
@@ -20,6 +21,7 @@ public class EventModel {
     public DateTime EndDate {get;set;}
 
 
-
-    public List<AttendentModel> Attendents {get;set;} = new List<AttendentModel>();
+    // Ett event kan ha många attendents
+    public ICollection<AttendentModel> Attendents {get;set;}
 }
+

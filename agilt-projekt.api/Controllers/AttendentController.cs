@@ -22,7 +22,17 @@ public class AttedentController : ControllerBase
 
     public async Task<IActionResult> GetAllAttendents()
     {
-        var result = await _context.Attendents.ToListAsync();
+        var result = await _context.Attendents
+        .Select(a => new {
+            Id = a.AttendentId,
+            Namn = $"{a.FirstName} {a.LastName}",
+            Telefon = a.PhoneNumber,
+            Anmäld = a.EventList.Select(e => new {
+            Eventnamn = e.EventName,
+            Datum = $"{e.StartDate.ToString("yyyy/MM/dd")} - {e.EndDate.ToString("yyyy/MM/dd")}"
+            }).ToList(),
+            Hemadress = a.Address,
+        }).ToListAsync();
 
         return Ok(result);
     }

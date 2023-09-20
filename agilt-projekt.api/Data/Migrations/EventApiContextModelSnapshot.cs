@@ -17,6 +17,21 @@ namespace agilt_projekt.api.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.11");
 
+            modelBuilder.Entity("AttendentModelEventModel", b =>
+                {
+                    b.Property<int>("AttendentsAttendentId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("EventListEventId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("AttendentsAttendentId", "EventListEventId");
+
+                    b.HasIndex("EventListEventId");
+
+                    b.ToTable("AttendentModelEventModel");
+                });
+
             modelBuilder.Entity("EventApi.Models.AttendentModel", b =>
                 {
                     b.Property<int>("AttendentId")
@@ -42,8 +57,6 @@ namespace agilt_projekt.api.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("AttendentId");
-
-                    b.HasIndex("EventId");
 
                     b.ToTable("Attendents");
                 });
@@ -73,18 +86,19 @@ namespace agilt_projekt.api.Data.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("EventApi.Models.AttendentModel", b =>
+            modelBuilder.Entity("AttendentModelEventModel", b =>
                 {
-                    b.HasOne("EventApi.Models.EventModel", null)
-                        .WithMany("Attendents")
-                        .HasForeignKey("EventId")
+                    b.HasOne("EventApi.Models.AttendentModel", null)
+                        .WithMany()
+                        .HasForeignKey("AttendentsAttendentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("EventApi.Models.EventModel", b =>
-                {
-                    b.Navigation("Attendents");
+                    b.HasOne("EventApi.Models.EventModel", null)
+                        .WithMany()
+                        .HasForeignKey("EventListEventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

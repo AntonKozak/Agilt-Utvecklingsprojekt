@@ -1,3 +1,4 @@
+using System.Runtime.Intrinsics.Arm;
 using EventApi.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,12 +19,16 @@ public class EventApiContext : DbContext
 
     }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    /* protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<EventModel>()
         .HasMany(e => e.Attendents)
         .WithOne()
         .HasForeignKey(a => a.EventId);
 
-    }
+
+
+
+
+    } */
 }

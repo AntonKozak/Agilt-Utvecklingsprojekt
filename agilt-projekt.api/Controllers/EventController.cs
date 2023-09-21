@@ -28,7 +28,6 @@ public class EventController : ControllerBase
        .Select(e => new {
         Id = e.EventId,
         Event = e.EventName,
-
         Anmälda = e.Attendents.Select(a => new {
 
             Namn = $"{a.FirstName} {a.LastName}",

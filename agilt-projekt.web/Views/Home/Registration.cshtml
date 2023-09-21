@@ -1,0 +1,28 @@
+
+<h2>Registration</h2>
+
+    <form action="" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+     <hr>
+    @Html.ActionLink("Log In", "Index", "Home") 
+    <br>
+@Html.ActionLink("Continue without registration", "Index", "Events") 

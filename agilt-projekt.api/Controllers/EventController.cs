@@ -20,7 +20,7 @@ public class EventController : ControllerBase
 
     // Retunera lista av events samt vilka som är anmälda
     [HttpGet()]
-    [Authorize(Roles = "User")]
+    // [Authorize(Roles = "User")]
     public async Task<IActionResult> GetAllEvents()
     {
 
@@ -32,8 +32,6 @@ public class EventController : ControllerBase
 
             Namn = $"{a.FirstName} {a.LastName}",
             Telefon = a.PhoneNumber
-
-
         }).ToList(),
 
        }).ToListAsync();
@@ -43,31 +41,31 @@ public class EventController : ControllerBase
     }
 
     // Hämta event på id
-    [HttpGet("{eventId}")]
-    public async Task<ActionResult> GetById(int eventId)
-    {
-        return Ok();
-    }
+    // [HttpGet("{eventId}")]
+    // public async Task<ActionResult> GetById(int eventId)
+    // {
+    //     return Ok();
+    // }
 
     // Skapa event
-    [HttpPost()]
-    public async Task<ActionResult> Create()
-    {
-        return StatusCode(201, new { message = "Event created" });
-    }
+    // [HttpPost()]
+    // public async Task<ActionResult> Create()
+    // {
+    //     return StatusCode(201, new { message = "Event created" });
+    // }
 
     // Uppdatera event
-    [HttpPut("{eventId}")]
-    public async Task<ActionResult> Update(int eventId)
-    {
-        return NoContent();
-    }
+    // [HttpPut("{eventId}")]
+    // public async Task<ActionResult> Update(int eventId)
+    // {
+    //     return NoContent();
+    // }
 
     // Ta bort event
-    [HttpDelete("eventId")]
-    public async Task<ActionResult> Delete(int eventId)
-    {
-        return NoContent();
-    }
+    // [HttpDelete("eventId")]
+    // public async Task<ActionResult> Delete(int eventId)
+    // {
+    //     return NoContent();
+    // }
 
 }

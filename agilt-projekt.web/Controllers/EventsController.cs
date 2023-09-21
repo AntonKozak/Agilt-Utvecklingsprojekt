@@ -1,32 +1,42 @@
-using agilt_projekt.web.Data;
-using agilt_projekt.web.Models;
+using System.Net.Http;
+using System.Text.Json;
+using agilt_projekt.web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace agilt_projekt.web.Controllers;
 
-    [Route("events")]
+[Route("events")]
     public class EventsController : Controller
     {
-        private readonly EventsContext _context;
-    public EventsController(EventsContext context)
+        private readonly IConfiguration _config;
+        private readonly IHttpClientFactory _httpClient;
+        private readonly JsonSerializerOptions _options;
+        
+        private readonly string _baseUrl;
+        
+    public EventsController(IConfiguration config, IHttpClientFactory httpClient)
     {
-        _context = context;
-
+            _httpClient = httpClient;
+            _config = config;
+            _baseUrl = _config.GetSection("apiSettings:baseUrl").Value;
+            _options = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
     }
 
-        //TASK make method awaited resultat the sane IActionResult(result HTTP req.)
-    public async Task<IActionResult> Index()
+    
+
+    //TASK make method awaited resultat the sane IActionResult(result HTTP req.)
+    [HttpGet()]
+        public async Task<IActionResult> Index()
         {
-            // UserEvents its DB. We are reading data from DB and making List with objects
-            var eventsList = await _context.UserEvents.ToListAsync();
-            // var events = new List<Event>{
-            //     new(){EventId = 1, Name = "Study C#", Description = "Learning C# every day"},
-            //     new(){EventId = 2, Name = "Meeting in Zoom", Description = "We shoud speak about LIA"},
-            //     new(){EventId = 3, Name = "JavaScript", Description = "Saturday meeting to explaine JavaScript"},
-            //     new(){EventId = 4, Name = "Get Post Put", Description = "Explanation request and answer"},
-            // };
-            // return View("Index", events);
-            return View("Index", eventsList);
+          using var client = _httpClient.CreateClient();
+          var response = await client.GetAsync($"{_baseUrl}/Event");
+        
+        if (!response.IsSuccessStatusCode) return Content("Error");
+
+        var json = await response.Content.ReadAsStringAsync();
+
+        var listOfEvents = JsonSerializer.Deserialize<IList<EventsListViewModel>>(json, _options);
+
+            return View("Index", listOfEvents);
         }
     }

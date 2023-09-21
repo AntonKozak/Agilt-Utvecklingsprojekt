@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "U6vjWwX6u0x3X89q6cEy6dnW8G4DxN9UzuKvqeScmdI=",
+  "Source": "agilt-projekt.web",
+  "BasePath": "_content/agilt-projekt.web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "agilt-projekt.web\\wwwroot",
+      "Source": "agilt-projekt.web",
+      "ContentRoot": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\",
+      "BasePath": "_content/agilt-projekt.web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\css\\site.css",
+      "SourceId": "agilt-projekt.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\",
+      "BasePath": "_content/agilt-projekt.web",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\js\\site.js",
+      "SourceId": "agilt-projekt.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\",
+      "BasePath": "_content/agilt-projekt.web",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

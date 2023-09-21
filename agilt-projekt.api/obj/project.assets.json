@@ -2339,19 +2339,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\newTi\\.nuget\\packages\\": {}
+    "C:\\Users\\Anton\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
+      "projectUniqueName": "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
       "projectName": "agilt-projekt.api",
-      "projectPath": "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
-      "packagesPath": "C:\\Users\\newTi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\newTi\\Desktop\\EventV2\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\obj\\",
+      "projectPath": "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
+      "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\newTi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

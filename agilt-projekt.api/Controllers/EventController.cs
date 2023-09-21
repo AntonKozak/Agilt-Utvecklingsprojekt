@@ -26,9 +26,10 @@ public class EventController : ControllerBase
 
     // Retunera lista av events samt vilka som är anmälda
     [HttpGet()]
-    [Authorize(Roles = "User")]
+    // [Authorize(Roles = "User")]
     public async Task<IActionResult> GetAllEvents()
     {
+
 
         var result = await _context.Events
         .Select(e => new
@@ -50,6 +51,7 @@ public class EventController : ControllerBase
     }
 
     // Hämta event på id
+
     [HttpGet("{eventId}")]
     public async Task<ActionResult> GetById(int eventId)
     {
@@ -88,20 +90,19 @@ public class EventController : ControllerBase
             return Created(nameof(GetById), new { id = e.EventId });
         }
         return StatusCode(500, "Internal Server Error");
-    }
 
     // Uppdatera event
-    [HttpPut("{eventId}")]
-    public async Task<ActionResult> Update(int eventId)
-    {
-        return NoContent();
-    }
+    // [HttpPut("{eventId}")]
+    // public async Task<ActionResult> Update(int eventId)
+    // {
+    //     return NoContent();
+    // }
 
     // Ta bort event
-    [HttpDelete("eventId")]
-    public async Task<ActionResult> Delete(int eventId)
-    {
-        return NoContent();
-    }
+    // [HttpDelete("eventId")]
+    // public async Task<ActionResult> Delete(int eventId)
+    // {
+    //     return NoContent();
+    // }
 
 }

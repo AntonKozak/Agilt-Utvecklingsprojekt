@@ -1,11 +1,11 @@
 
-@model IList<agilt_projekt.web.Models.Event>
+@model IList<agilt_projekt.web.ViewModels.EventsListViewModel>
 
 <h1>Create our Event</h1>
     <section>
-        @foreach (var item in Model)
+        @foreach (var events in Model)
         {
-            <div><h3>@item.Name</h3><h4>@item.Description</h4><br></div>
+            <div><h3>@events.Event</h3></div>
         }
     </section>
     <hr>

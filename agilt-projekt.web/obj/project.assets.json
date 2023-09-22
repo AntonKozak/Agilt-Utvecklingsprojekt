@@ -1304,19 +1304,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anton\\.nuget\\packages\\": {}
+    "C:\\Users\\Fredr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj",
+      "projectUniqueName": "c:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj",
       "projectName": "agilt-projekt.web",
-      "projectPath": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj",
-      "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\obj\\",
+      "projectPath": "c:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\agilt-projekt.web.csproj",
+      "packagesPath": "C:\\Users\\Fredr\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Fredr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1380,7 +1380,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

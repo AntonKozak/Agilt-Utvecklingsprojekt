@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {}
+    "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {
+    "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
+        "projectUniqueName": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
         "projectName": "agilt-projekt.api",
-        "projectPath": "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
-        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anton\\Study\\Agile\\agilt-Utvecklingsprojekt\\agilt-projekt.api\\obj\\",
+        "projectPath": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\agilt-projekt.api.csproj",
+        "packagesPath": "C:\\Users\\Fredr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fredr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

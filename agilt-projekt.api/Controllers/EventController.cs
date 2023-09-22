@@ -92,16 +92,36 @@ public class EventController : ControllerBase
 
     // Uppdatera event
     [HttpPut("{eventId}")]
-    public async Task<ActionResult> Update(int eventId)
+    public async Task<ActionResult> Update(int eventId, EventPostViewModel model)
     {
-        return NoContent();
+        var e = await _context.Events.FindAsync(eventId);
+
+        e.EventName = model.EventName;
+        e.Description = model.Description;
+        e.StartDate = model.StartDate;
+        e.EndDate = model.EndDate;
+
+        _context.Events.Update(e);
+
+        if (await _context.SaveChangesAsync() > 0)
+        {
+            return NoContent();
+        }
+        return StatusCode(500, "Internal Server Error");
     }
 
     // Ta bort event
-    [HttpDelete("eventId")]
+    [HttpDelete("{eventId}")]
     public async Task<ActionResult> Delete(int eventId)
     {
-        return NoContent();
+        var e = await _context.Events.FindAsync(eventId);
+        _context.Events.Remove(e);
+        if (await _context.SaveChangesAsync() > 0)
+        {
+            return NoContent();
+        }
+
+        return StatusCode(500, "Internal Server Error");
     }
 
 }

@@ -1,11 +1,23 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\css\\event-list-page.css",
+      "PackagePath": "staticwebassets\\css\\event-list-page.css"
+    },
+    {
+      "Id": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\css\\login-page.css",
+      "PackagePath": "staticwebassets\\css\\login-page.css"
+    },
+    {
+      "Id": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\css\\registration-page.css",
+      "PackagePath": "staticwebassets\\css\\registration-page.css"
+    },
+    {
+      "Id": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Anton\\Study\\Agile\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Fredr\\Desktop\\AGILT\\Agilt-Utvecklingsprojekt\\agilt-projekt.web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {

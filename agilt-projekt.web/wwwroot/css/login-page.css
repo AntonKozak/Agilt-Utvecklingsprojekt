@@ -1,0 +1,71 @@
+/* Grundläggande stil för sidan */
+body {
+    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skugga för formuläret */
+    padding: 20px;
+    text-align: center;
+    max-width: 400px; /* Begränsa bredden på formuläret */
+    margin: 0 auto; /* Centrera formuläret horisontellt */
+}
+
+/* Stilar för rubriker */
+h1 {
+    color: #070101; /* Textfärg */
+    font-size: 28px;
+}
+
+h2 {
+    color: #070101;
+    font-size: 24px;
+}
+
+/* Stilar för etiketter och inputfält */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Stilar för knappen */
+input[type="submit"] {
+    background-color: #007BFF; /* Bakgrundsfärg för knappen */
+    color: #fff; /* Textfärg för knappen */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Färg när man hoverar över knappen */
+}
+
+/* Stilar för länkar */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
